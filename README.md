@@ -3,28 +3,8 @@
 $ sudo apt-get update
 $ sudo apt-get install docker.io
 $ docker --version
-📥 Clone the Repository
-bash
-Copy
-Edit
-$ git clone https://github.com/Adivishnu15/Docker.git
-$ cd Docker
-🔁 Note: For Java, Python, or Web projects, only the source code and image name change. Docker commands remain the same.
 
-🛠️ General Docker Workflow
-Create a new folder and add your Dockerfile and source code.
-
-Build your Docker image:
-
-bash
-Copy
-Edit
 $ docker build -t <image-name> .
-Run your Docker container:
-
-bash
-Copy
-Edit
 $ docker run -it <image-name>
 (Optional) Login to DockerHub:
 
@@ -107,15 +87,3 @@ $ docker build -t loginform-demo .
 $ docker run -d -p 8080:80 loginform-demo
 Visit http://localhost:8080 in your browser.
 
-💡 Tips
-If the Docker container seems to pause/hang, use Ctrl + C to stop.
-
-Make sure to change the image names to avoid conflicts.
-
-Ensure the correct file permissions are set if files aren’t running.
-
-📦 Contributing
-Pull requests are welcome! If you’d like to add more Docker experiments or improve existing ones, feel free to contribute.
-
-📄 License
-This project is licensed under the MIT License.
